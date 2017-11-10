@@ -10,7 +10,7 @@
 		113667E91A470D56C3F1D5E2 /* Pods______.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2BD831C3047CEAE3CACAFAE /* Pods______.framework */; };
 		A44237481FB5842D003B3C64 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44237471FB5842D003B3C64 /* AppDelegate.swift */; };
 		A442374A1FB5842D003B3C64 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44237491FB5842D003B3C64 /* ViewController.swift */; };
-		A442374D1FB5842D003B3C64 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A442374B1FB5842D003B3C64 /* Main.storyboard */; };
+		A442374D1FB5842D003B3C64 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A442374B1FB5842D003B3C64 /* Home.storyboard */; };
 		A44237521FB5842D003B3C64 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A44237501FB5842D003B3C64 /* LaunchScreen.storyboard */; };
 		A442375D1FB5842D003B3C64 /* _____Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A442375C1FB5842D003B3C64 /* _____Tests.swift */; };
 		A44237681FB5842D003B3C64 /* _____UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44237671FB5842D003B3C64 /* _____UITests.swift */; };
@@ -49,7 +49,7 @@
 		A44237441FB5842D003B3C64 /* 晚餐共享会.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "晚餐共享会.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A44237471FB5842D003B3C64 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A44237491FB5842D003B3C64 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		A442374C1FB5842D003B3C64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A442374C1FB5842D003B3C64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Home.storyboard; sourceTree = "<group>"; };
 		A44237511FB5842D003B3C64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A44237531FB5842D003B3C64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A44237581FB5842D003B3C64 /* 晚餐共享会Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "晚餐共享会Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -248,7 +248,7 @@
 			isa = PBXGroup;
 			children = (
 				A442378A1FB58D74003B3C64 /* Login.storyboard */,
-				A442374B1FB5842D003B3C64 /* Main.storyboard */,
+				A442374B1FB5842D003B3C64 /* Home.storyboard */,
 			);
 			path = SoryBorad;
 			sourceTree = "<group>";
@@ -376,7 +376,7 @@
 				A442378B1FB58D74003B3C64 /* Login.storyboard in Resources */,
 				A442378D1FB58DF1003B3C64 /* Images.xcassets in Resources */,
 				A44237521FB5842D003B3C64 /* LaunchScreen.storyboard in Resources */,
-				A442374D1FB5842D003B3C64 /* Main.storyboard in Resources */,
+				A442374D1FB5842D003B3C64 /* Home.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -496,12 +496,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		A442374B1FB5842D003B3C64 /* Main.storyboard */ = {
+		A442374B1FB5842D003B3C64 /* Home.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				A442374C1FB5842D003B3C64 /* Base */,
 			);
-			name = Main.storyboard;
+			name = Home.storyboard;
 			path = ..;
 			sourceTree = "<group>";
 		};
@@ -623,6 +623,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = lewwei.StudyRxSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;

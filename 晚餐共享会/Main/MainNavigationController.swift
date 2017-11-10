@@ -16,6 +16,7 @@ class MainNavigationController: UINavigationController {
        let  dict = [NSForegroundColorAttributeName: UIColor.darkGray]
     
         navigationBar.titleTextAttributes = dict
+    
     }
 
     

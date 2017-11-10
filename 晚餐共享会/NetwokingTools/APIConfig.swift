@@ -113,10 +113,10 @@ class CustomPlugin: PluginType {
         {
             case .failure(let error):
                 
-                print("请求发生错误:" + error.errorDescription!)
+                LWLog(message: "请求发生错误:" + error.errorDescription!)
             case .success(let value):
                 
-                print("data;\(value)")
+                LWLog(message: "data;\(value)")
         }
         
         return result

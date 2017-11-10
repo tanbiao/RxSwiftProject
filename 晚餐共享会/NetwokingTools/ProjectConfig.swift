@@ -12,10 +12,9 @@ import UIKit
 func LWLog<T>(message : T, file : String = #file, lineNumber : Int = #line) {
     
     #if DEBUG
-        
         let fileName = (file as NSString).lastPathComponent
         print("[\(fileName):line:\(lineNumber)]- \(message)")
-        
+    
     #endif
 }
 
