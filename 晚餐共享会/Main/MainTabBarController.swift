@@ -20,6 +20,7 @@ class MainTabBarController: UITabBarController {
         super.viewDidLoad()
 
         addChildViewControllers()
+       
     }
     
     func addChildViewControllers()

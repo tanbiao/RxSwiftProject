@@ -8,6 +8,8 @@
 
 import Foundation
 import UIKit
+import RxCocoa
+import RxSwift
 
 func LWLog<T>(message : T, file : String = #file, lineNumber : Int = #line) {
     
@@ -20,4 +22,7 @@ func LWLog<T>(message : T, file : String = #file, lineNumber : Int = #line) {
 let screenH = UIScreen.main.bounds.width
 
 let screenW = UIScreen.main.bounds.height
+
+let disposeBag = DisposeBag()
+
 

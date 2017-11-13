@@ -13,6 +13,10 @@ import Result
 
 let baseUrlString = "http://sdp.hzsb365.com"
 
+//"http://dinner.lewitech.cn";
+
+//let baseUrlString = "http://dinner.lewitech.cn"
+
 var accessToken = ""
 
 /*这个节点闭包是添加自定义请求头*/
@@ -71,25 +75,23 @@ class CustomPlugin: PluginType {
         
         /*这里自定义协议头*/
         urlRequest.addHeader()
-        LWLog(message: "准备请求....")
+    
         return urlRequest
     }
     
     func willSend(_ request: RequestType, target: TargetType)
     {
-        LWLog(message: "将要发送请求")
+        
     }
     
     func didReceive(_ result: Result<Response, MoyaError>, target: TargetType)
     {
         
-        LWLog(message: "已经收到响应了......")
-        
         switch result {
             
         case .failure(let error):
             
-           LWLog(message: "请求发生错误:" + error.errorDescription!)
+            Toast().showError(text: error.localizedDescription)
             
         case .success(let value):
             
@@ -101,7 +103,7 @@ class CustomPlugin: PluginType {
             }
             else
             {
-                LWLog(message: "请求数据错误:" + JsonData["msg"].stringValue)
+                Toast().showError(text: JsonData["msg"].stringValue)
             }
             
         }
@@ -112,10 +114,11 @@ class CustomPlugin: PluginType {
         switch result
         {
             case .failure(let error):
-                
-                LWLog(message: "请求发生错误:" + error.errorDescription!)
+            
+                Toast().showError(text: error.errorDescription!)
+//                LWLog(message: "请求发生错误:" + error.errorDescription!)
             case .success(let value):
-                
+                               
                 LWLog(message: "data;\(value)")
         }
         

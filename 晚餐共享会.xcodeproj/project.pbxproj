@@ -8,8 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		113667E91A470D56C3F1D5E2 /* Pods______.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2BD831C3047CEAE3CACAFAE /* Pods______.framework */; };
+		A41F19AB1FB931A00099441B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41F19AA1FB931A00099441B /* LoginViewController.swift */; };
+		A41F19AD1FB933040099441B /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41F19AC1FB933040099441B /* UIViewController+Extension.swift */; };
+		A41F19AF1FB935C80099441B /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41F19AE1FB935C80099441B /* RegisterViewController.swift */; };
+		A41F19B21FB947710099441B /* BaseTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41F19B11FB947710099441B /* BaseTableView.swift */; };
+		A41F19B41FB94BD00099441B /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41F19B31FB94BD00099441B /* LoginViewModel.swift */; };
+		A41F19B61FB94DC10099441B /* String + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41F19B51FB94DC10099441B /* String + Extension.swift */; };
+		A41F19B91FB952340099441B /* LoginHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41F19B81FB952340099441B /* LoginHandler.swift */; };
+		A41F19BB1FB952A10099441B /* Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41F19BA1FB952A10099441B /* Protocol.swift */; };
+		A41F19BD1FB98F1F0099441B /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41F19BC1FB98F1F0099441B /* RegisterViewModel.swift */; };
 		A44237481FB5842D003B3C64 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44237471FB5842D003B3C64 /* AppDelegate.swift */; };
-		A442374A1FB5842D003B3C64 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44237491FB5842D003B3C64 /* ViewController.swift */; };
 		A442374D1FB5842D003B3C64 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A442374B1FB5842D003B3C64 /* Home.storyboard */; };
 		A44237521FB5842D003B3C64 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A44237501FB5842D003B3C64 /* LaunchScreen.storyboard */; };
 		A442375D1FB5842D003B3C64 /* _____Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A442375C1FB5842D003B3C64 /* _____Tests.swift */; };
@@ -18,7 +26,7 @@
 		A442377E1FB5858B003B3C64 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = A442377C1FB5858B003B3C64 /* SwiftyJSON.swift */; };
 		A44237821FB5862F003B3C64 /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44237811FB5862F003B3C64 /* Toast.swift */; };
 		A44237841FB58654003B3C64 /* LoginAPIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44237831FB58654003B3C64 /* LoginAPIRouter.swift */; };
-		A44237861FB586A2003B3C64 /* APIConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44237851FB586A2003B3C64 /* APIConfig.swift */; };
+		A44237861FB586A2003B3C64 /* APIPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44237851FB586A2003B3C64 /* APIPlugin.swift */; };
 		A44237881FB58841003B3C64 /* ProjectConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44237871FB58841003B3C64 /* ProjectConfig.swift */; };
 		A442378B1FB58D74003B3C64 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A442378A1FB58D74003B3C64 /* Login.storyboard */; };
 		A442378D1FB58DF1003B3C64 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A442378C1FB58DF1003B3C64 /* Images.xcassets */; };
@@ -46,9 +54,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A41F19AA1FB931A00099441B /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		A41F19AC1FB933040099441B /* UIViewController+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		A41F19AE1FB935C80099441B /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		A41F19B11FB947710099441B /* BaseTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTableView.swift; sourceTree = "<group>"; };
+		A41F19B31FB94BD00099441B /* LoginViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		A41F19B51FB94DC10099441B /* String + Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String + Extension.swift"; sourceTree = "<group>"; };
+		A41F19B81FB952340099441B /* LoginHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginHandler.swift; sourceTree = "<group>"; };
+		A41F19BA1FB952A10099441B /* Protocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Protocol.swift; sourceTree = "<group>"; };
+		A41F19BC1FB98F1F0099441B /* RegisterViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
 		A44237441FB5842D003B3C64 /* 晚餐共享会.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "晚餐共享会.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A44237471FB5842D003B3C64 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A44237491FB5842D003B3C64 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A442374C1FB5842D003B3C64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Home.storyboard; sourceTree = "<group>"; };
 		A44237511FB5842D003B3C64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A44237531FB5842D003B3C64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -62,7 +78,7 @@
 		A442377C1FB5858B003B3C64 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 		A44237811FB5862F003B3C64 /* Toast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
 		A44237831FB58654003B3C64 /* LoginAPIRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginAPIRouter.swift; sourceTree = "<group>"; };
-		A44237851FB586A2003B3C64 /* APIConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIConfig.swift; sourceTree = "<group>"; };
+		A44237851FB586A2003B3C64 /* APIPlugin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIPlugin.swift; sourceTree = "<group>"; };
 		A44237871FB58841003B3C64 /* ProjectConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectConfig.swift; sourceTree = "<group>"; };
 		A442378A1FB58D74003B3C64 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		A442378C1FB58DF1003B3C64 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -118,6 +134,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		A41F19B01FB9475C0099441B /* BaseClass */ = {
+			isa = PBXGroup;
+			children = (
+				A41F19B11FB947710099441B /* BaseTableView.swift */,
+			);
+			path = BaseClass;
+			sourceTree = "<group>";
+		};
 		A442373B1FB5842D003B3C64 = {
 			isa = PBXGroup;
 			children = (
@@ -143,11 +167,11 @@
 		A44237461FB5842D003B3C64 /* 晚餐共享会 */ = {
 			isa = PBXGroup;
 			children = (
+				A41F19B01FB9475C0099441B /* BaseClass */,
 				A442378E1FB58EE5003B3C64 /* Main */,
 				A44237891FB58D3B003B3C64 /* SoryBorad */,
 				A44237801FB5860F003B3C64 /* Tools */,
 				A44237471FB5842D003B3C64 /* AppDelegate.swift */,
-				A44237491FB5842D003B3C64 /* ViewController.swift */,
 				A44237751FB58577003B3C64 /* Login */,
 				A442377A1FB58577003B3C64 /* NetwokingTools */,
 				A44237501FB5842D003B3C64 /* LaunchScreen.storyboard */,
@@ -183,6 +207,7 @@
 				A44237771FB58577003B3C64 /* Model */,
 				A44237781FB58577003B3C64 /* View */,
 				A44237791FB58577003B3C64 /* ViewModel */,
+				A41F19B81FB952340099441B /* LoginHandler.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -190,6 +215,8 @@
 		A44237761FB58577003B3C64 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				A41F19AA1FB931A00099441B /* LoginViewController.swift */,
+				A41F19AE1FB935C80099441B /* RegisterViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -211,6 +238,8 @@
 		A44237791FB58577003B3C64 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				A41F19B31FB94BD00099441B /* LoginViewModel.swift */,
+				A41F19BC1FB98F1F0099441B /* RegisterViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -220,7 +249,7 @@
 			children = (
 				A442377B1FB5858B003B3C64 /* Observable+ObjectMapper.swift */,
 				A442377C1FB5858B003B3C64 /* SwiftyJSON.swift */,
-				A44237851FB586A2003B3C64 /* APIConfig.swift */,
+				A44237851FB586A2003B3C64 /* APIPlugin.swift */,
 				A44237871FB58841003B3C64 /* ProjectConfig.swift */,
 			);
 			path = NetwokingTools;
@@ -240,6 +269,9 @@
 				A44237811FB5862F003B3C64 /* Toast.swift */,
 				A44237951FB5918A003B3C64 /* UIColor + Extension.swift */,
 				A44237971FB5947F003B3C64 /* UIImage+Extension.swift */,
+				A41F19AC1FB933040099441B /* UIViewController+Extension.swift */,
+				A41F19B51FB94DC10099441B /* String + Extension.swift */,
+				A41F19BA1FB952A10099441B /* Protocol.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -449,18 +481,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A41F19B91FB952340099441B /* LoginHandler.swift in Sources */,
+				A41F19BB1FB952A10099441B /* Protocol.swift in Sources */,
 				A442377D1FB5858B003B3C64 /* Observable+ObjectMapper.swift in Sources */,
-				A442374A1FB5842D003B3C64 /* ViewController.swift in Sources */,
 				A44237901FB58F16003B3C64 /* MainTabBarController.swift in Sources */,
 				A44237981FB5947F003B3C64 /* UIImage+Extension.swift in Sources */,
+				A41F19AD1FB933040099441B /* UIViewController+Extension.swift in Sources */,
+				A41F19B41FB94BD00099441B /* LoginViewModel.swift in Sources */,
+				A41F19B21FB947710099441B /* BaseTableView.swift in Sources */,
 				A44237821FB5862F003B3C64 /* Toast.swift in Sources */,
+				A41F19AF1FB935C80099441B /* RegisterViewController.swift in Sources */,
 				A44237961FB5918A003B3C64 /* UIColor + Extension.swift in Sources */,
+				A41F19BD1FB98F1F0099441B /* RegisterViewModel.swift in Sources */,
 				A44237881FB58841003B3C64 /* ProjectConfig.swift in Sources */,
 				A44237921FB58F41003B3C64 /* MainNavigationController.swift in Sources */,
 				A44237481FB5842D003B3C64 /* AppDelegate.swift in Sources */,
 				A44237841FB58654003B3C64 /* LoginAPIRouter.swift in Sources */,
+				A41F19B61FB94DC10099441B /* String + Extension.swift in Sources */,
 				A442377E1FB5858B003B3C64 /* SwiftyJSON.swift in Sources */,
-				A44237861FB586A2003B3C64 /* APIConfig.swift in Sources */,
+				A41F19AB1FB931A00099441B /* LoginViewController.swift in Sources */,
+				A44237861FB586A2003B3C64 /* APIPlugin.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

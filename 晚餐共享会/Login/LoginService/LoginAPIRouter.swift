@@ -12,10 +12,12 @@ import Moya
 enum LoginAPIRouter : TargetType
 {
     /*登录*/
-    case login
-    
+    case login(phone :String ,smsCode :String)
     /*注册*/
-    case logout
+    case rigster(phone : String,smsCode:String,invitationCode:String)
+    /*发送验证码
+     */
+    case sendCode(phone : String )
     
 }
 
@@ -29,7 +31,16 @@ extension LoginAPIRouter
     
     var path: String
     {
-        return ""
+        switch self
+        {
+            case .login:
+                return "/api/v1/user/login"
+            case .rigster:
+                return "/api/v1/user/register"
+            case .sendCode:
+                return "/api/v1/sms/send"
+        }
+        
     }
         
     var method: Moya.Method
@@ -39,11 +50,23 @@ extension LoginAPIRouter
     
     var parameters: [String : Any]?
     {
-        return ["":""]
+        switch self
+        {
+            case .login(phone: let phone , smsCode: let code):
+                var dict : [String:Any] = ["phone":phone,"sms_code" :code]
+                return dict.setPlatform()
+            case .rigster(phone: let phone, smsCode: let smsCode , invitationCode: let invitationCode):
+                var dict: [String:Any] = ["phone":phone,"sms_code" :smsCode,"invitation_code":invitationCode]
+                return dict.setPlatform()
+            case .sendCode(phone: let phone):
+                var dict :[String:Any] = ["phone": phone,"type":1]
+                return dict.setPlatform()
+        }
     }
     
     var parameterEncoding: ParameterEncoding
     {
+
         return JSONEncoding.default
     }
     
@@ -63,4 +86,17 @@ extension LoginAPIRouter
         return true
     }
  
+}
+
+extension Dictionary
+{
+    mutating func setPlatform() -> [String :Any]
+    {
+        var dict = self as! [String : Any]
+        
+        dict["platform"] = "ios"
+        
+        return dict
+    }
+
 }
